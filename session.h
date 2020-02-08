@@ -14,12 +14,18 @@ public:
     int port;
     QString protocol;
     QString filepath;
-    QString packet_size;
+    int packet_size;
     int transmissions;
     FileManager fm;
 
     Session();
     void startTest(int action);
+
+private:
+    void tcp_clnt();
+    void tcp_serv();
+    void udp_clnt();
+    void udp_serv();
 };
 
 #endif // SESSION_H

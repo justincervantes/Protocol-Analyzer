@@ -2,26 +2,24 @@
 #include <stdlib.h>
 FileManager::FileManager()
 {
-    qDebug("You've reached me!");
     buffer = (char*) malloc(1024 * sizeof(char));
-
 }
 
 FileManager::~FileManager()
 {
     free(buffer);
 }
-void FileManager::buildBufferFromFile(QString size) {
+void FileManager::buildBufferFromFile(int size) {
 
     int mallocSize;
 
-    if(size == "1024B") {
+    if(size == 1024) {
         mallocSize = 1024;
-    } else if(size == "4096B") {
+    } else if(size == 4096) {
         mallocSize = 4096;
-    } else if(size == "20KB") {
+    } else if(size == 20000) {
         mallocSize = 20000;
-    } else if(size == "60KB") {
+    } else if(size == 60000) {
         mallocSize = 60000;
     } else {
         mallocSize = 100000;

@@ -14,7 +14,7 @@ public:
     QString filename;
     fstream fs;
     char * buffer;
-    void buildBufferFromFile(QString size);
+    void buildBufferFromFile(int size);
 };
 
 

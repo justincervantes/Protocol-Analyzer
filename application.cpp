@@ -48,7 +48,7 @@ void Application::on_actionClient_triggered()
     ui->actionClient->setChecked(true);
     ui->actionServer->setChecked(false);
     ui->behaviour_value->setText("Client Mode");
-    session.behaviour = "Client";
+    session.behaviour = "Client Mode";
 }
 
 void Application::on_actionServer_triggered()
@@ -56,7 +56,7 @@ void Application::on_actionServer_triggered()
     ui->actionClient->setChecked(false);
     ui->actionServer->setChecked(true);
     ui->behaviour_value->setText("Server Mode");
-    session.behaviour = "Server";
+    session.behaviour = "Server Mode";
 }
 
 void Application::on_action10_triggered()
@@ -83,7 +83,7 @@ void Application::on_action1024B_triggered()
     ui->action60KB->setChecked(false);
     ui->action100KB->setChecked(false);
     ui->packet_value->setText("1024B");
-    session.packet_size = "1024B";
+    session.packet_size = 1024;
 }
 
 void Application::on_action4096B_triggered()
@@ -94,7 +94,7 @@ void Application::on_action4096B_triggered()
     ui->action60KB->setChecked(false);
     ui->action100KB->setChecked(false);
     ui->packet_value->setText("4096B");
-    session.packet_size = "4096B";
+    session.packet_size = 4096;
 }
 
 void Application::on_action20KB_triggered()
@@ -105,7 +105,7 @@ void Application::on_action20KB_triggered()
     ui->action60KB->setChecked(false);
     ui->action100KB->setChecked(false);
     ui->packet_value->setText("20KB");
-    session.packet_size = "20KB";
+    session.packet_size = 20000;
 }
 
 void Application::on_action60KB_triggered()
@@ -116,7 +116,7 @@ void Application::on_action60KB_triggered()
     ui->action60KB->setChecked(true);
     ui->action100KB->setChecked(false);
     ui->packet_value->setText("60KB");
-    session.packet_size = "60KB";
+    session.packet_size = 60000;
 }
 
 void Application::on_action100KB_triggered()
@@ -127,7 +127,7 @@ void Application::on_action100KB_triggered()
     ui->action60KB->setChecked(false);
     ui->action100KB->setChecked(true);
     ui->packet_value->setText("100KB");
-    session.packet_size = "100KB";
+    session.packet_size = 100000;
 }
 
 void Application::on_actionTCP_triggered()
