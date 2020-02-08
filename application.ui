@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Application</class>
+ <widget class="QMainWindow" name="Application">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Application</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>781</width>
+      <height>159</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="hudGrid" columnstretch="0,0,0,0,0,0">
+     <item row="2" column="2">
+      <widget class="QLabel" name="port_value">
+       <property name="text">
+        <string>8050</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLabel" name="port_label">
+       <property name="text">
+        <string>Port:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="4">
+      <widget class="QLabel" name="packet_value">
+       <property name="text">
+        <string>1024B</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QLabel" name="protocol_value">
+       <property name="text">
+        <string>TCP</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="5">
+      <widget class="QPushButton" name="start_button">
+       <property name="text">
+        <string>Start Test</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1" colspan="3">
+      <widget class="QLabel" name="behaviour_value">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="baseSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Client Mode</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLabel" name="ip_label">
+       <property name="text">
+        <string>IP:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLabel" name="protocol_label">
+       <property name="text">
+        <string>Protocol:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QLabel" name="transmission_label">
+       <property name="text">
+        <string>Tx Times:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="4">
+      <widget class="QLabel" name="transmission_value">
+       <property name="text">
+        <string>10 times</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QLabel" name="packet_label">
+       <property name="text">
+        <string>Packet Size:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QLabel" name="ip_value">
+       <property name="text">
+        <string>192.168.0.3</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLabel" name="file_label">
+       <property name="text">
+        <string>File:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2" colspan="3">
+      <widget class="QLabel" name="file_value">
+       <property name="text">
+        <string>alice_in_wonderland.txt</string>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>160</y>
+      <width>781</width>
+      <height>145</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="analyticsGrid" rowstretch="0,0,0,0,0" columnstretch="0,0">
+     <item row="4" column="1">
+      <widget class="QLabel" name="total_data_value">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="end_label">
+       <property name="text">
+        <string>End Time:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLabel" name="end_value">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLabel" name="start_value">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="total_time_label">
+       <property name="text">
+        <string>Total Transfer Time:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="total_data_label">
+       <property name="text">
+        <string>Total Data Transferred:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLabel" name="total_time_value">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="start_label">
+       <property name="text">
+        <string>Start Time:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0" colspan="2">
+      <widget class="QLabel" name="test_label">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="baseSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Test Analytics</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QTextBrowser" name="console_label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>320</y>
+      <width>781</width>
+      <height>211</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuBehaviour">
+    <property name="title">
+     <string>Behaviour</string>
+    </property>
+    <addaction name="actionClient"/>
+    <addaction name="actionServer"/>
+   </widget>
+   <widget class="QMenu" name="menuConnection">
+    <property name="title">
+     <string>Connection</string>
+    </property>
+    <widget class="QMenu" name="menuSet_Protocol">
+     <property name="title">
+      <string>Set Protocol</string>
+     </property>
+     <addaction name="actionTCP"/>
+     <addaction name="actionUDP"/>
+    </widget>
+    <addaction name="actionSet_IP"/>
+    <addaction name="actionSet_Port"/>
+    <addaction name="menuSet_Protocol"/>
+   </widget>
+   <widget class="QMenu" name="menuTransmission">
+    <property name="title">
+     <string>Transmission</string>
+    </property>
+    <widget class="QMenu" name="menuTx_Repeat">
+     <property name="title">
+      <string>Tx Repeat</string>
+     </property>
+     <addaction name="action10"/>
+     <addaction name="action100"/>
+    </widget>
+    <widget class="QMenu" name="menuPacket_Size">
+     <property name="title">
+      <string>Packet Size</string>
+     </property>
+     <addaction name="action1024B"/>
+     <addaction name="action4096B"/>
+     <addaction name="action20KB"/>
+     <addaction name="action60KB"/>
+     <addaction name="action100KB"/>
+    </widget>
+    <addaction name="menuPacket_Size"/>
+    <addaction name="menuTx_Repeat"/>
+    <addaction name="actionSet_File"/>
+   </widget>
+   <addaction name="menuBehaviour"/>
+   <addaction name="menuConnection"/>
+   <addaction name="menuTransmission"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionClient">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Client</string>
+   </property>
+  </action>
+  <action name="actionServer">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Server</string>
+   </property>
+  </action>
+  <action name="actionSet_IP">
+   <property name="text">
+    <string>Set IP</string>
+   </property>
+  </action>
+  <action name="action10">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>x10</string>
+   </property>
+  </action>
+  <action name="action100">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>x100</string>
+   </property>
+  </action>
+  <action name="action1024B">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>1024B</string>
+   </property>
+  </action>
+  <action name="action4096B">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>4096B</string>
+   </property>
+  </action>
+  <action name="action20KB">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>20KB</string>
+   </property>
+  </action>
+  <action name="action60KB">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>60KB</string>
+   </property>
+  </action>
+  <action name="action100KB">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>100KB</string>
+   </property>
+  </action>
+  <action name="actionTCP">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>TCP</string>
+   </property>
+  </action>
+  <action name="actionUDP">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>UDP</string>
+   </property>
+  </action>
+  <action name="actionSet_Port">
+   <property name="text">
+    <string>Set Port</string>
+   </property>
+  </action>
+  <action name="actionSet_File">
+   <property name="text">
+    <string>Set File</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
