@@ -21,7 +21,10 @@ SOURCES += \
     filemanager.cpp \
     main.cpp \
     application.cpp \
-    session.cpp
+    tcp_clnt.cpp \
+    tcp_serv.cpp \
+    udp_clnt.cpp \
+    udp_serv.cpp
 
 HEADERS += \
     application.h \

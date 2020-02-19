@@ -1,31 +1,21 @@
 #ifndef SESSION_H
 #define SESSION_H
-
 #include <QString>
 #include "filemanager.h"
+#include "application.h"
 
-
-class Session
-{
-public:
-
-    QString behaviour;
-    QString ip;
-    int port;
-    QString protocol;
+struct sessionVariables {
+    Application * app;
+    QString behaviour = "Client Mode";
+    QString ip = "192.168.0.15";
+    int port = 8050;
+    QString protocol = "TCP";
     QString filepath;
-    int packet_size;
-    int transmissions;
+    int packet_size = 1024;
+    int transmissions = 10;
     FileManager fm;
-
-    Session();
-    void startTest(int action);
-
-private:
-    void tcp_clnt();
-    void tcp_serv();
-    void udp_clnt();
-    void udp_serv();
 };
+
+
 
 #endif // SESSION_H

@@ -26,7 +26,7 @@ void FileManager::buildBufferFromFile(int size) {
     }
     buffer = (char*)realloc(buffer, static_cast<size_t>(mallocSize * sizeof(char)));
     if(!fs.is_open()) {
-        this->fs.open("C:\\Users\\Justin Cervantes\\Documents\\build-ProtocolAnalyzer-Desktop_Qt_5_14_0_MinGW_64_bit-Debug\\alice_in_wonderland.txt");
+        this->fs.open("alice_in_wonderland.txt");
         this->fs.read(buffer, mallocSize);
     } else {
         fs.clear();

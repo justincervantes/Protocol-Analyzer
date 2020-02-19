@@ -15,6 +15,11 @@ public:
     Application(QWidget *parent = nullptr);
     ~Application();
 
+    void append_console(QString);
+
+    void set_total_data_trasmitted(int input);
+
+    void set_total_packets_lost(int input);
 private slots:
     void on_actionSet_IP_triggered();
 
@@ -36,7 +41,7 @@ private slots:
 
     void on_action60KB_triggered();
 
-    void on_action100KB_triggered();
+    void on_action65KB_triggered();
 
     void on_actionTCP_triggered();
 
@@ -44,7 +49,7 @@ private slots:
 
     void on_start_button_clicked();
 
-    void on_actionSet_File_triggered();
+
 
 private:
     Ui::Application *ui;

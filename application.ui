@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>963</width>
+    <height>698</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,11 +19,11 @@
      <rect>
       <x>10</x>
       <y>0</y>
-      <width>781</width>
-      <height>159</height>
+      <width>941</width>
+      <height>111</height>
      </rect>
     </property>
-    <layout class="QGridLayout" name="hudGrid" columnstretch="0,0,0,0,0,0">
+    <layout class="QGridLayout" name="hudGrid" columnstretch="0,1,1,1,1,2">
      <item row="2" column="2">
       <widget class="QLabel" name="port_value">
        <property name="text">
@@ -33,6 +33,12 @@
      </item>
      <item row="2" column="1">
       <widget class="QLabel" name="port_label">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>Port:</string>
        </property>
@@ -93,6 +99,12 @@
      </item>
      <item row="1" column="1">
       <widget class="QLabel" name="ip_label">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>IP:</string>
        </property>
@@ -100,6 +112,12 @@
      </item>
      <item row="3" column="1">
       <widget class="QLabel" name="protocol_label">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>Protocol:</string>
        </property>
@@ -107,6 +125,12 @@
      </item>
      <item row="2" column="3">
       <widget class="QLabel" name="transmission_label">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>Tx Times:</string>
        </property>
@@ -121,6 +145,12 @@
      </item>
      <item row="1" column="3">
       <widget class="QLabel" name="packet_label">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>Packet Size:</string>
        </property>
@@ -135,6 +165,12 @@
      </item>
      <item row="4" column="1">
       <widget class="QLabel" name="file_label">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>File:</string>
        </property>
@@ -156,12 +192,12 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>160</y>
-      <width>781</width>
-      <height>145</height>
+      <y>110</y>
+      <width>941</width>
+      <height>131</height>
      </rect>
     </property>
-    <layout class="QGridLayout" name="analyticsGrid" rowstretch="0,0,0,0,0" columnstretch="0,0">
+    <layout class="QGridLayout" name="analyticsGrid" rowstretch="0,0,0,0,0,0" columnstretch="0,1">
      <item row="4" column="1">
       <widget class="QLabel" name="total_data_value">
        <property name="text">
@@ -171,27 +207,25 @@
      </item>
      <item row="2" column="0">
       <widget class="QLabel" name="end_label">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>End Time:</string>
        </property>
       </widget>
      </item>
-     <item row="2" column="1">
-      <widget class="QLabel" name="end_value">
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="1">
-      <widget class="QLabel" name="start_value">
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-     </item>
      <item row="3" column="0">
       <widget class="QLabel" name="total_time_label">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>Total Transfer Time:</string>
        </property>
@@ -199,6 +233,12 @@
      </item>
      <item row="4" column="0">
       <widget class="QLabel" name="total_data_label">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>Total Data Transferred:</string>
        </property>
@@ -211,8 +251,28 @@
        </property>
       </widget>
      </item>
+     <item row="1" column="1">
+      <widget class="QLabel" name="start_value">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLabel" name="end_value">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
      <item row="1" column="0">
       <widget class="QLabel" name="start_label">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>Start Time:</string>
        </property>
@@ -250,16 +310,62 @@
        </property>
       </widget>
      </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="total_packets_lost_label">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Total Packets Lost or Corrupted:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLabel" name="total_packets_lost_value">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
     </layout>
    </widget>
    <widget class="QTextBrowser" name="console_label">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>320</y>
-      <width>781</width>
-      <height>211</height>
+      <y>250</y>
+      <width>941</width>
+      <height>401</height>
      </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; text-decoration: underline;&quot;&gt;Usage:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The program sends a text file (specified number of bytes from Alice in Wonderland) between two instances of itself on different machines over a local area network. One person must run this program as a client, and one person must run this program as a server.The client will be the person sending a file to the server. This application is intended to be used in conjunction with Wireshark for network analysis.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Server&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1) Server must change default Behaviour from client to server.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2) Server sets the protocol that will be used by the paired machine (agreed upon in advance by both the client and the server).&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;3) Server sets the packet size it will expect (agreed upon in advance by both the client and the server).&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;4) Server starts the test by pushing &amp;quot;Start Test&amp;quot;. This &lt;span style=&quot; font-style:italic;&quot;&gt;must&lt;/span&gt; be done before the client starts the test.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;5) Statistics are collected.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;*Note about the TCP server: a zombie thread finishes the execution after a connection is accepted.This makes the GUI total transfer time moot. This applies to the reason total packets lost has been left empty for TCP servers as well.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Client&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1) Client sets up IP address to connect to.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2) Client sets up the port that it wants to connect to (agreed upon in advance by both the client and the server).&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;3) Client choses the protocol that will be used with the paired machine (agreed upon in advance by both the client and the server).&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;4) Client choses the packet size (agreed upon in advance by both client and server).&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;5) The client indicates if they want to send 10 or 100 transmissions of the given packet size.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;6) The client starts the test by selecting &amp;quot;Start Test&amp;quot;. The server &lt;span style=&quot; font-style:italic;&quot;&gt;must &lt;/span&gt; have started the test before the client does otherwise the program will crash.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;7) Statistics are collected.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
   </widget>
@@ -268,8 +374,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
-     <height>30</height>
+     <width>963</width>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuBehaviour">
@@ -313,11 +419,10 @@
      <addaction name="action4096B"/>
      <addaction name="action20KB"/>
      <addaction name="action60KB"/>
-     <addaction name="action100KB"/>
+     <addaction name="action65KB"/>
     </widget>
     <addaction name="menuPacket_Size"/>
     <addaction name="menuTx_Repeat"/>
-    <addaction name="actionSet_File"/>
    </widget>
    <addaction name="menuBehaviour"/>
    <addaction name="menuConnection"/>
@@ -402,12 +507,15 @@
     <string>60KB</string>
    </property>
   </action>
-  <action name="action100KB">
+  <action name="action65KB">
    <property name="checkable">
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>100KB</string>
+    <string>65KB</string>
+   </property>
+   <property name="toolTip">
+    <string>65KB</string>
    </property>
   </action>
   <action name="actionTCP">
@@ -432,11 +540,6 @@
   <action name="actionSet_Port">
    <property name="text">
     <string>Set Port</string>
-   </property>
-  </action>
-  <action name="actionSet_File">
-   <property name="text">
-    <string>Set File</string>
    </property>
   </action>
  </widget>
